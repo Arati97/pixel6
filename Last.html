@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validations</title>
+    <link rel="stylesheet" href="assign.css" />
+</head>
+
+<body onload="nameLoad()">
+    <script src="assign.js">
+        
+    </script>
+    <div class="message">
+        <div class="msgOtp">
+            <p>Dear <span id="fname"></span> Thank you for your inquiry. A 4 digit verification number has been sent to your  <span id="mobile_no"></span> .
+                Thank you for your inquiry. <br>please enter in the following box and submit forconfirmation:</p>
+
+        </div>
+        <input type="text" id="otp" placeholder="Enter Otp here...!!">
+        <button id="validate" onclick="validateOTP()" >validate</button>
+
+        <span id="otpError" style="color: red"> Please enter valid otp. <br><span id="attempt"></span> attempts remaining.
+        </span>
+
+    </div>
+
+
+
+
+    
+</body>
+
+</html>
+
+<!-- <script type="text/javascript">
+window.onload = function() {
+const search = new URLSearchParams(window.location.search)
+var fnm = search.get('fnm');
+var mobile_no = search.get('mobile_no');
+document.getElementById("fname").innerHTML=fnm;
+     document.getElementById("mobile_no").innerHTML= mobile_no;
+};
+</script> -->
